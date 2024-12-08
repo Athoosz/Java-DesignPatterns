@@ -1,0 +1,32 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>150</x><y>90</y><w>210</w><h>90</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+Observer
+--
+
+--
++ Update()
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>150</x><y>240</y><w>210</w><h>90</h></coordinates><panel_attributes>TemperatureDisplay
+--
+- String displayId
+--
++ Update()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>230</x><y>170</y><w>50</w><h>90</h></coordinates><panel_attributes>lt=&lt;.
+</panel_attributes><additional_attributes>30;10;10;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>450</x><y>90</y><w>260</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+Subject
+--
+
+--
++ registerObserver(Observer observer)
++ removeObserver(Observer observer)
++ notifyObservers()
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>350</x><y>130</y><w>120</w><h>30</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;100;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>460</x><y>270</y><w>280</w><h>130</h></coordinates><panel_attributes>TemperatureSensor
+--
+- List&lt;Observer&gt; observers 
+- float temperature
+--
++ registerObserver(Observer observer)
++ removeObserver(Observer observer)
++ notifyObservers()
++ setTemperatura()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>200</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;.
+</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element></diagram>
